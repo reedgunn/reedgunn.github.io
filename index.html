@@ -83,5 +83,21 @@
         Linkedin: <a href="https://www.linkedin.com/in/reedgunn/" target="_blank">https://www.linkedin.com/in/reedgunn/</a><br>
         GitHub: <a href="https://github.com/reedgunn" target="_blank">https://github.com/reedgunn</a><br>
     </p>
+    
+    <script>
+        // Prevent the Unity containers from capturing scroll events
+        var iframeContainers = document.querySelectorAll('.iframe-container');
+        iframeContainers.forEach(function(container) {
+            container.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                window.scrollBy({
+                    top: e.deltaY,
+                    left: e.deltaX,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
