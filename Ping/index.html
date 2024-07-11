@@ -117,6 +117,12 @@
 
       document.body.appendChild(script);
 
+      // Prevent the Unity container from capturing scroll events
+      var unityContainer = document.querySelector("#unity-container");
+      unityContainer.addEventListener('wheel', function(e) {
+        e.stopPropagation();
+      });
+
     </script>
   </body>
 </html>
