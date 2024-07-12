@@ -116,11 +116,13 @@
             };
 
       document.body.appendChild(script);
+
       document.addEventListener('wheel', onScroll, false);
       document.addEventListener('mousemove', onMouse, false);
-      var content = document.getElementsByClassName('unity-desktop');
+      var content = document.getElementsByClassName('webgl-content');
       function onMouse() { content[0].style['pointer-events'] = 'auto'; }
       function onScroll() { content[0].style['pointer-events'] = 'none'; }
+
     </script>
   </body>
 </html>
