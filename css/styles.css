@@ -1,0 +1,35 @@
+.center-text {
+    text-align: center;
+}
+
+.center-list {
+    display: inline-block;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.46);
+    transform-origin: top left;
+}
+
+.iframe-wrapper iframe {
+    width: 217%;
+    height: 217%;
+    border: 0;
+}

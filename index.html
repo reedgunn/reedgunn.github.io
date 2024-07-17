@@ -1,119 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reed Gunn's Website</title>
-    <link rel="icon" type="image/x-icon" href="visuals/headshot_square.png">
-    <style>
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .iframe-wrapper {
-            width: 100%;
-            height: 100%;
-            transform: scale(0.46);
-            transform-origin: top left;
-        }
-        .iframe-wrapper iframe {
-            width: 217%;
-            height: 217%;
-            border: 0;
-        }
-        .center-text {
-            text-align: center;
-        }
-    </style>
-</head>
+<html lang="en-US">
 
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reed Gunn's Website</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" src="images/headshot_square.png">
+        <meta name="description" content="Reed Gunn's Website">
+    </head>
 
+    <body>
 
-    <div class="center-text">
-        <h1>Reed Gunn</h1>
-        <img src="visuals/headshot_circle.png" alt="Failed to load image." width="300" height="300">
-        <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
-        <a href="https://reedgunn.github.io/visuals/REED_GUNN_RESUME.pdf" target="_blank"><button>View Resume</button></a>
-    </div>
+        <header class="center-text">
+            <h1>Reed Gunn</h1>
+            <img src="images/headshot_circle.png" width="300" height="300">
+            <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
+            <a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="reg">
+                <button>View Resume</button>
+            </a>
+        </header>
 
-    <h3>Contents:</h3>
-    <ul>
-        <li><a href="#Languages">Languages</a></li>
-        <li><a href="#Technologies">Technologies</a></li>
-        <li><a href="#Portfolio">Portfolio</a>
-            <ul>
-                <li><a href="#Worble App">Worble App</a></li>
-                <li><a href="#Sleep-Schedule-Generator App">Sleep-Schedule-Generator App</a></li>
-                <li><a href="#Ping App">Ping App</a></li>
-            </ul>
-        </li>
-        <li><a href="#Links">Links</a>
-    </ul>
+        <nav class="left-text">
+            <a href="#Languages">Languages</a>
+            <a href="#Technologies">Technologies</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        
+        <main class="center-text">
+            <section id="Languages">
+                <h2>Languages</h2>
+                <ul class="center-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>HTML</li>
+                    <li>MATLAB</li>
+                </ul>
+            </section>
 
-    <h3 id="Languages">Languages:</h3>
-    <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>HTML</li>
-        <li>MATLAB</li>
-    </ul>
+            <section id="Technologies">
+                <h2>Technologies</h2>
+                <ul class="center-list">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </section>
 
-    <h3 id="Technologies">Technologies:</h3>
-    <ul>
-        <li>Git</li>
-        <li>GitHub</li>
-    </ul>
+            <section id="Portfolio">
+                <h2>Portfolio</h2>
 
-    <h3 id="Portfolio">Portfolio:</h3>
-    <ul>
-        <li id="Worble App">Worble App:
-            <div class="iframe-container">
-                <div class="iframe-wrapper">
-                    <iframe src="Worble/index.html"></iframe>
-                </div>
-            </div>
-            <ul>
-                <li>GitHub: <a href="https://github.com/reedgunn/Worble" target="_blank">https://github.com/reedgunn/Worble</a></li>
-            </ul>
-        </li>
-        <br>
-        <li id="Sleep-Schedule-Generator App">Sleep-Schedule-Generator App:
-            <div class="iframe-container">
-                <div class="iframe-wrapper">
-                    <iframe src="Sleep-Schedule-Generator/index.html"></iframe>
-                </div>
-            </div>
-            <ul>
-                <li>GitHub: <a href="https://github.com/reedgunn/Sleep-Schedule-Generator" target="_blank">https://github.com/reedgunn/Sleep-Schedule-Generator</a></li>
-            </ul>
-        </li>
-        <br>
-        <li id="Ping App">Ping App:
-            <div class="iframe-container">
-                <div class="iframe-wrapper">
-                    <iframe src="Ping/index.html"></iframe>
-                </div>
-            </div>
-            <ul>
-                <li>GitHub: <a href="https://github.com/reedgunn/Ping" target="_blank">https://github.com/reedgunn/Ping</a></li>
-            </ul>
-        </li>
-    </ul>
+                <section id="WorbleApp">
+                    <h3>Worble App</h3>
+                    <div class="iframe-container">
+                        <div class="iframe-wrapper">
+                            <iframe src="Worble/index.html"></iframe>
+                        </div>
+                    </div>
+                    <p>GitHub: <a href="https://github.com/reedgunn/Worble-App" target="_blank">https://github.com/reedgunn/Worble-App</a></p>
+                </section>
 
-    <h3 id="Links">Links:</h3>
-    <ul>
-        <li>Email: <a href="mailto:reedgunn2027@u.northwestern.edu">reedgunn2027@u.northwestern.edu</a></li>
-        <li>Linkedin: <a href="https://www.linkedin.com/in/reedgunn/" target="_blank">https://www.linkedin.com/in/reedgunn/</a></li>
-        <li>GitHub: <a href="https://github.com/reedgunn" target="_blank">https://github.com/reedgunn</a></li>
-    </ul>
+                <section id="SleepScheduleGeneratorApp">
+                    <h3>Sleep Schedule Generator App</h3>
+                    <div class="iframe-container">
+                        <div class="iframe-wrapper">
+                            <iframe src="Sleep-Schedule-Generator/index.html"></iframe>
+                        </div>
+                    </div>
+                    <p>GitHub: <a href="https://github.com/reedgunn/SleepScheduleGenerator-App" target="_blank">https://github.com/reedgunn/SleepScheduleGenerator-App</a></p>
+                </section>
 
+                <section id="PingApp">
+                    <h3>Ping App</h3>
+                    <div class="iframe-container">
+                        <div class="iframe-wrapper">
+                            <iframe src="Ping/index.html"></iframe>
+                        </div>
+                    </div>
+                    <p>GitHub: <a href="https://github.com/reedgunn/Ping-App" target="_blank">https://github.com/reedgunn/Ping-App</a></li></p>
+                </section>
 
-</body>
+            <section id="Contact">
+                <h2>Contact</h2>
+                <form>
+                    <label for="message">Send me a message:<label>
+                    <input type="text" id="message"> 
+                    <input type="submit">
+                </form>
+            </section>
 
+        </main>
+
+        <aside class="right-text">Aside</aside>
+        
+        <footer class="center-text">
+            <address><a href="https://www.linkedin.com/in/reedgunn/" target="_blank">LinkedIn</a> | <a href="https://github.com/reedgunn" target="_blank">GitHub</a></address>
+            <p>&copy;2024 Reed Gunn. All rights reserved.</p>
+        </footer>
+
+    </body>
 </html>
