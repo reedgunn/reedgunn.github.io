@@ -5,33 +5,37 @@
         <meta charset="UTF-8">
         <title>Reed Gunn's Website</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="mystyle.css">
         <link rel="icon" type="image/png" src="images/headshot_square.png">
-        <meta name="description" content="Reed Gunn's Website">
     </head>
 
     <body>
 
-        <header class="center-text">
+        <div id="header">
             <h1>Reed Gunn</h1>
-            <img src="images/headshot_circle.png" width="300" height="300">
+            <img id="headerHeadshot" src="images/headshot_circle.png">
             <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
-            <a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="reg">
-                <button>View Resume</button>
-            </a>
-        </header>
+            <form action="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="reg">
+                <input type="submit" value="View Resume">
+            </form>
+            <br>
+        </div>
 
-        <nav class="left-text">
-            <a href="#Languages">Languages</a>
-            <a href="#Technologies">Technologies</a>
-            <a href="#Portfolio">Portfolio</a>
+        <br>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="#Languages">Languages</a> |
+            <a href="#Technologies">Technologies</a> |
+            <a href="#Portfolio">Portfolio</a> |
             <a href="#Contact">Contact</a>
         </nav>
         
-        <main class="center-text">
+        <main>
+
             <section id="Languages">
                 <h2>Languages</h2>
-                <ul class="center-list">
+                <ul>
                     <li>Python</li>
                     <li>Java</li>
                     <li>C</li>
@@ -44,62 +48,64 @@
 
             <section id="Technologies">
                 <h2>Technologies</h2>
-                <ul class="center-list">
+                <ul>
                     <li>Git</li>
                     <li>GitHub</li>
                 </ul>
             </section>
 
             <section id="Portfolio">
+
                 <h2>Portfolio</h2>
 
-                <section id="WorbleApp">
+                <section>
                     <h3>Worble App</h3>
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
                             <iframe src="Worble/index.html"></iframe>
                         </div>
                     </div>
-                    <p>GitHub: <a href="https://github.com/reedgunn/Worble-App" target="_blank">https://github.com/reedgunn/Worble-App</a></p>
+                    <p>GitHub: <a href="https://github.com/reedgunn/Worble-App" target="reg">https://github.com/reedgunn/Worble-App</a></p>
                 </section>
 
-                <section id="SleepScheduleGeneratorApp">
+                <section>
                     <h3>Sleep Schedule Generator App</h3>
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
                             <iframe src="Sleep-Schedule-Generator/index.html"></iframe>
                         </div>
                     </div>
-                    <p>GitHub: <a href="https://github.com/reedgunn/SleepScheduleGenerator-App" target="_blank">https://github.com/reedgunn/SleepScheduleGenerator-App</a></p>
+                    <p>GitHub: <a href="https://github.com/reedgunn/SleepScheduleGenerator-App" target="reg">https://github.com/reedgunn/SleepScheduleGenerator-App</a></p>
                 </section>
 
-                <section id="PingApp">
+                <section>
                     <h3>Ping App</h3>
                     <div class="iframe-container">
                         <div class="iframe-wrapper">
                             <iframe src="Ping/index.html"></iframe>
                         </div>
                     </div>
-                    <p>GitHub: <a href="https://github.com/reedgunn/Ping-App" target="_blank">https://github.com/reedgunn/Ping-App</a></li></p>
+                    <p>GitHub: <a href="https://github.com/reedgunn/Ping-App" target="reg">https://github.com/reedgunn/Ping-App</a></li></p>
                 </section>
+
+            </section>
 
             <section id="Contact">
                 <h2>Contact</h2>
                 <form>
                     <label for="message">Send me a message:<label>
-                    <input type="text" id="message"> 
+                    <input type="text"> 
                     <input type="submit">
                 </form>
             </section>
 
         </main>
-
-        <aside class="right-text">Aside</aside>
         
-        <footer class="center-text">
-            <address><a href="https://www.linkedin.com/in/reedgunn/" target="_blank">LinkedIn</a> | <a href="https://github.com/reedgunn" target="_blank">GitHub</a></address>
+        <div id="footer">
+            <address><a href="https://www.linkedin.com/in/reedgunn/" target="reg">LinkedIn</a> | <a href="https://github.com/reedgunn" target="reg">GitHub</a></address>
             <p>&copy;2024 Reed Gunn. All rights reserved.</p>
-        </footer>
+        </div>
 
     </body>
+
 </html>
