@@ -5,22 +5,34 @@ body {
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     font-size: 100%;
+    h1, p {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4.5em;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 p, ul, nav, label, address {
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+label {
+    height: 10px;
+}
+
+form {
+    margin: 15px 0px;
 }
 
 #header {
@@ -35,8 +47,8 @@ p, ul, nav, label, address {
 }
 
 #headerHeadshot {
-    width: 25%;
-    height: 25%;
+    width: 30vw;
+    height: 56vh; /* (~1.85 x width) */
 }
 
 a {
