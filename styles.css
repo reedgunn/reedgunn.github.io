@@ -1,10 +1,9 @@
 /* styles.css */
 
 body, input {
-    background: rgb(204, 204, 204);
+    background: rgb(249, 249, 249);
     color: rgb(31, 31, 31);
     font-family: "Roboto Mono", "Roboto", monospace;
-    font-weight: bold;
     font-size: min(2vh, calc(2vw/1.85));
     margin: 0;
     padding: 0;
@@ -17,11 +16,11 @@ h1 {
 h2 {
     text-decoration: underline;
     font-size: min(4vh, calc(4vw/1.85));
-    margin: 0vh 0vw 0vh 1vw;
+    margin: 0vh 0vw 2vh 1vw;
 }
 h3 {
     font-size: min(3vh, calc(3vw/1.85));
-    margin: 2vh 0vw 0.5vh 1.5vw;
+    margin: 1vh 0vw 1vh 1.5vw;
 }
 
 p, label, address {
@@ -38,11 +37,14 @@ input {
     padding: 0vh 1vw;
     margin-bottom: 2vh;
     border-width: min(0.35vh, calc(0.35vw/1.85));
-    background-color: rgb(230, 230, 230);
 }
 
 nav {
-    margin: 2vh 0.5vw 2vh;
+    margin: 1vh 0.5vw 5vh;
+    a {
+        text-decoration: none;
+        color: Black;
+    }
 }
 
 #header {
@@ -57,8 +59,8 @@ nav {
 }
 
 #headerHeadshot {
-    width: min(33vw, 33vh);
-    height: min(33vw, 33vh);
+    width: min(40vw, 40vh);
+    height: min(40vw, 40vh);
     border-radius: 50%;
 }
 
