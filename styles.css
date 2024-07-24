@@ -23,7 +23,7 @@ h3 {
     margin: 1vh 0vw 1vh 1.5vw;
 }
 
-p, label, address {
+p, label, address, textarea, input {
     margin-left: 1.5vw;
 }
 
@@ -33,14 +33,15 @@ p, label, address {
     }
 }
 
-input {
+input, textarea {
     padding: 0vh 1vw;
-    margin-bottom: 2vh;
+    border-style: solid;
     border-width: min(0.35vh, calc(0.35vw/1.85));
+    margin-bottom: 2vh;
 }
 
 nav {
-    margin: 1vh 0.5vw 5vh;
+    margin: 1vh 0.5vw 4vh;
     a {
         text-decoration: none;
         color: Black;
@@ -84,4 +85,30 @@ a {
     top: 0;
     left: 0;
     transform-origin: top left;
+}
+
+#emailInput {
+    width: 20vw;
+    height: 3vh;
+    padding: 0vh 0.5vw;
+}
+
+#gform {
+    input {
+        margin: 1vh 0;
+        padding: 0.2vh 0.4vw;
+    }
+    textarea {
+        margin: 1vh 1.5vw 0vh;
+    }
+    .nameInput {
+        width: 6vw;
+    }
+    .emailInput {
+        width: 21vw;
+        margin-bottom: 1.5vh;
+    }
+    .button {
+        margin: 0;
+    }
 }
