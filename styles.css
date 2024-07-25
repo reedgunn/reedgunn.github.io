@@ -1,13 +1,34 @@
 /* styles.css */
 
-body, input {
+body {
     background: rgb(249, 249, 249);
     color: rgb(31, 31, 31);
-    font-family: "Roboto Mono", "Roboto", monospace;
-    font-size: min(2vh, calc(2vw/1.85));
+    font: min(2vh, calc(2vw/1.85)) "Roboto Mono", "Roboto", monospace;
     margin: 0;
     padding: 0;
     overflow: auto;
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    .navlink {
+        color: rgb(31, 31, 31);
+    }
+    .navlink:hover, .navlink:active {
+        color: rgb(200, 200, 200);
+    }
+    .navlink {
+        margin: 0vh 0.75vw 0vh 0vw;
+        text-decoration: none;
+    }
+    .navbar-brand {
+        margin-right: 2vw;
+        font-size:min(3vh, calc(3vw/1.85));
+    }
+    background-color: rgb(230, 230, 230);
+    padding: 1vh 3vw;
+    margin-bottom: 2vh;
 }
 
 h1 {
@@ -23,7 +44,7 @@ h3 {
     margin: 1vh 0vw 1vh 1.5vw;
 }
 
-p, label, address, textarea, input {
+p, label, address {
     margin-left: 1.5vw;
 }
 
@@ -38,20 +59,12 @@ input, textarea {
     border-style: solid;
     border-width: min(0.35vh, calc(0.35vw/1.85));
     margin-bottom: 2vh;
-}
-
-nav {
-    margin: 1vh 0.5vw 4vh;
-    a {
-        text-decoration: none;
-        color: Black;
-    }
+    margin-left: 1.5vw;
+    border-color: rgb(31, 31, 31);
+    background-color: White;
 }
 
 #header {
-    /* border shorthand: width, style(required), color */
-    border: min(0.5vh, 0.5vw) solid rgb(31, 31, 31);
-    border-radius: min(2.5vh, 2.5vw);
     margin: 0vh min(25vw, calc(75vh*1.85));
 }
 
@@ -63,10 +76,6 @@ nav {
     width: min(40vw, 40vh);
     height: min(40vw, 40vh);
     border-radius: 50%;
-}
-
-a {
-    color: Blue;
 }
 
 .app-container {
@@ -98,9 +107,6 @@ a {
         margin: 1vh 0;
         padding: 0.2vh 0.4vw;
     }
-    textarea {
-        margin: 1vh 1.5vw 0vh;
-    }
     .nameInput {
         width: 6vw;
     }
@@ -108,7 +114,16 @@ a {
         width: 21vw;
         margin-bottom: 1.5vh;
     }
-    .button {
-        margin: 0;
+    textarea {
+        margin: 1vh 1.5vw 0vh;
     }
+}
+
+#view-resume-button {
+    width: 7vw;
+    padding: 0;
+}
+#submit-contact-form-button {
+    width: 4vw;
+    padding: 0;
 }

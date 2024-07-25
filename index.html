@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" sizes="96x96" href="images/Headshot.png">
 </head>
+
 <body>
     <nav>
-        |<a href="index.html">Home</a>|<a href="#Languages">Languages</a>|<a href="#Technologies">Technologies</a>|<a href="#Portfolio">Portfolio</a>|<a href="#Contact">Contact</a>|
+        <a class="navbar-brand">Reed Gunn</a>
+        <a class="navlink" href="">Home</a>
+        <a class="navlink" href="#Languages">Languages</a>
+        <a class="navlink" href="#Technologies">Technologies</a>
+        <a class="navlink" href="#Portfolio">Portfolio</a>
+        <a class="navlink" href="#Contact">Contact</a>
     </nav>
+    
     <div id="header">
         <h1>Reed Gunn</h1>
         <img id="headerHeadshot" src="images/Headshot.png">
         <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
         <form action="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">
-            <input class="button" type="submit" value="View Resume">
+            <input id="view-resume-button" type="submit" value="View Resume">
         </form>
     </div>
     <main>
@@ -81,19 +88,22 @@
             <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeAWByljpr8R6YKmypBt_SoieIxkELqTe6nTuo08duXWOXzZg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 <label>
                     First name:
-                    <input type="text" name="entry.2124440639" id="entry.2124440639" class="nameInput">
-                </label><br>
+                    <input name="entry.2124440639" type="text" id="entry.2124440639" class="nameInput">
+                </label>
                 <label>
                     Last name:
-                    <input type="text" name="entry.1350313047" id="entry.1350313047" class="nameInput">
-                </label><br>
+                    <input name="entry.1350313047" type="text" id="entry.1350313047" class="nameInput">
+                </label>
                 <label>
                     Email:
-                    <input type="text" name="entry.1882131274" id="entry.1882131274" class="emailInput">
+                    <input name="entry.1882131274" type="text" id="entry.1882131274" class="emailInput">
                 </label><br>
-                <label for="entry.481604323">Message:</label><br>
-                <textarea name="entry.481604323" id="entry.481604323" rows="4" cols="50"></textarea>
-                <input class="button" type="submit" value="Submit">
+                <label>
+                    Message:
+                    <textarea name="entry.481604323" id="entry.481604323" rows="4" cols="50"></textarea>
+                </label>
+                <input id="submit-contact-form-button" type="submit" value="Submit">
+                
             </form>
               
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -101,10 +111,12 @@
             
         </section>
     </main>
+    
     <div id="footer">
         <address><a href="https://www.linkedin.com/in/reedgunn/" target="_blank">LinkedIn</a> | <a href="https://github.com/reedgunn" target="_blank">GitHub</a></address>
         <p>&copy;2024 Reed Gunn. All rights reserved.</p>
     </div>
+
     <script src="script.js"></script>
     
     <script>
