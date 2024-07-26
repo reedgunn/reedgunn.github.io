@@ -1,34 +1,92 @@
 /* styles.css */
 
-body {
+body, html, .button {
     background: rgb(249, 249, 249);
     color: rgb(31, 31, 31);
     font: min(2vh, calc(2vw/1.85)) "Roboto Mono", "Roboto", monospace;
     margin: 0;
     padding: 0;
-    overflow: auto;
 }
 
-nav {
-    top: 0;
+#local-nav {
     position: sticky;
-    .navlink {
-        color: rgb(31, 31, 31);
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0vh 0vw 3vh 0vw;
+    padding: 0;
+    overflow: auto;
+    background-color: rgb(35, 35, 35);
+    li {
+        float: left;
     }
-    .navlink:hover, .navlink:active {
-        color: rgb(200, 200, 200);
-    }
-    .navlink {
-        margin: 0vh 0.75vw 0vh 0vw;
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
     }
-    .navbar-brand {
-        margin-right: 2vw;
-        font-size:min(3vh, calc(3vw/1.85));
+    li a:hover {
+        background-color: rgb(110, 110, 110);
     }
-    background-color: rgb(230, 230, 230);
-    padding: 1vh 3vw;
-    margin-bottom: 2vh;
+    li a.active {
+        background-color: rgb(120, 0, 200);
+    }
+}
+
+main {
+    clear: left;
+}
+
+.part {
+    float: left;
+    box-sizing: border-box;
+}
+.left, .right {
+    width: 25vw;
+    padding: 10vh 5vw;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 1vh 0vw;
+    }
+    tr:nth-child(even) {
+        background-color: rgb(235, 235, 235);
+    }
+    th {
+        font-size: min(2.5vh, calc(2.5vw/1.85));
+    }
+}
+.center {
+    width: 50vw;
+    section {
+        height: min(67vh, calc(67vw/1.85));
+        width: 100%;
+        margin: auto;
+        border: min(1vh, calc(1vw/1.85)) solid black;
+        border-radius: min(2vh, calc(2vw/1.85));
+        text-align: center;
+        h1 {
+            margin: 2vh 0;
+        }
+    }
+}
+#headerHeadshot {
+    width: min(20vw, calc(20vh*1.85));
+    height: min(20vw, calc(20vh*1.85));
+    border-radius: 50%;
+}
+
+
+
+#footer {
+    text-align: center;
 }
 
 h1 {
@@ -44,7 +102,7 @@ h3 {
     margin: 1vh 0vw 1vh 1.5vw;
 }
 
-p, label, address {
+p, address {
     margin-left: 1.5vw;
 }
 
@@ -62,20 +120,6 @@ input, textarea {
     margin-left: 1.5vw;
     border-color: rgb(31, 31, 31);
     background-color: White;
-}
-
-#header {
-    margin: 0vh min(25vw, calc(75vh*1.85));
-}
-
-#header, #footer {
-    text-align: center;
-}
-
-#headerHeadshot {
-    width: min(40vw, 40vh);
-    height: min(40vw, 40vh);
-    border-radius: 50%;
 }
 
 .app-container {
@@ -103,10 +147,6 @@ input, textarea {
 }
 
 #gform {
-    input {
-        margin: 1vh 0;
-        padding: 0.2vh 0.4vw;
-    }
     .nameInput {
         width: 6vw;
     }
@@ -115,15 +155,18 @@ input, textarea {
         margin-bottom: 1.5vh;
     }
     textarea {
-        margin: 1vh 1.5vw 0vh;
+        display: inline;
+        margin: 0;
+        padding: 0;
     }
+    margin-left: 1.5vw;
 }
 
-#view-resume-button {
-    width: 7vw;
-    padding: 0;
+th, td {
+    border-bottom: 0.25vh solid rgb(31, 31, 31);
 }
-#submit-contact-form-button {
-    width: 4vw;
-    padding: 0;
+
+.local-nav-section {
+    padding-top: 6.5vh; /* Adjust as needed */
+    margin-top: -6.5vh; /* Negative margin equal to the navbar height */
 }
