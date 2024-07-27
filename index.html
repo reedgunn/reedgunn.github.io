@@ -10,59 +10,57 @@
 </head>
 
 <body>
-    <ul id="local-nav">
-        <li><a id="home-link" class="active" href="index.html">Home</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#Contact">Contact</a></li>
+    <ul id="navbar">
+        <li class="left-nav-link"><a id="home-link" class="active" href="index.html">Home</a></li>
+        <li class="left-nav-link"><a href="index.html#Portfolio">Portfolio</a></li>
+        <li class="left-nav-link"><a href="index.html#Contact">Contact</a></li>
+        <li style="float:right"><a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">Resume</a></li>;
+        <li style="float:right"><a href="https://www.linkedin.com/in/reedgunn" target="_blank">LinkedIn</a></li>;
+        <li style="float:right"><a href="https://github.com/reedgunn" target="_blank">GitHub</a></li>;
     </ul>
 
-    <div class="part left">
-        <table>
-        <thead>
-            <tr><th>Languages</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Python</td></tr>
-            <tr><td>Java</td></tr>
-            <tr><td>C#</td></tr>
-            <tr><td>C++</td></tr>
-            <tr><td>HTML</td></tr>
-            <tr><td>CSS</td></tr>
-            <tr><td>C</td></tr>
-            <tr><td>MATLAB</td></tr>
-            <tr><td>Racket</td></tr>
-        </tbody>
-        </table>
-    </div>
-    <div class="part center">
-        <section>
+    <div id="intro">
+        <div class="part left">
+            <table>
+            <thead>
+                <tr><th>Languages</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Python</td></tr>
+                <tr><td>Java</td></tr>
+                <tr><td>C#</td></tr>
+                <tr><td>C++</td></tr>
+                <tr><td>HTML</td></tr>
+                <tr><td>CSS</td></tr>
+                <tr><td>C</td></tr>
+                <tr><td>MATLAB</td></tr>
+                <tr><td>Racket</td></tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="part center">
             <h1>Reed Gunn</h1>
             <img id="headerHeadshot" src="images/Headshot.png">
             <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
-            <form action="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">
-                <input class="button" type="submit" value="View Resume">
-            </form>
-        </section>
+        </div>
+        <div class="part right">
+            <table>
+                <thead>
+                    <tr><th>Technologies</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Git</td></tr>
+                    <tr><td>GitHub</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="part right">
-        <table>
-            <thead>
-                <tr><th>Technologies</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Git</td></tr>
-                <tr><td>GitHub</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    
 
     <main>
-        <section class="local-nav-section" id="Portfolio">
+        <div id="Portfolio" class="local-nav-section">
             <h2>Portfolio</h2>
-            <section id="Worble">
-                <h3>Worble App:</h3>
+            <div id="Worble">
+                <h3>Worble Game App:</h3>
                 <div class="app-container">
                     <iframe class="app" src="Unity_WebGL_Apps/Worble/index.html"></iframe>
                 </div>
@@ -70,8 +68,18 @@
                     <li>Skills: C#, Game Development, Data Structures</li>
                     <li>GitHub: <a href="https://github.com/reedgunn/Worble-App" target="_blank">https://github.com/reedgunn/Worble-App</a></li>
                 </ul>
-            </section>
-            <section id="Sleep Schedule Generator">
+            </div>
+            <div id="Ping">
+                <h3>Ping Game App:</h3>
+                <div class="app-container">
+                    <iframe class="app" src="Unity_WebGL_Apps/Ping/index.html"></iframe>
+                </div>
+                <ul>
+                    <li>Skills: C#, Game Development, Physics</li>
+                    <li>GitHub: <a href="https://github.com/reedgunn/Ping-App" target="_blank">https://github.com/reedgunn/Ping-App</a></li>
+                </ul>
+            </div>
+            <div id="Sleep Schedule Generator">
                 <h3>Sleep Schedule Generator App:</h3>
                 <div class="app-container">
                     <iframe class="app" src="Unity_WebGL_Apps/Sleep Schedule Generator/index.html"></iframe>
@@ -80,47 +88,34 @@
                     <li>Skills: C#, Algorithms, Data Analysis</li>
                     <li>GitHub: <a href="https://github.com/reedgunn/SleepScheduleGenerator-App" target="_blank">https://github.com/reedgunn/SleepScheduleGenerator-App</a></li>
                 </ul>
-            </section>
-            <section id="Ping">
-                <h3>Ping App:</h3>
-                <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Ping/index.html"></iframe>
-                </div>
-                <ul>
-                    <li>Skills: C#, Game Development, Physics</li>
-                    <li>GitHub: <a href="https://github.com/reedgunn/Ping-App" target="_blank">https://github.com/reedgunn/Ping-App</a></li>
-                </ul>
-            </section>
-        </section>
-        <section id="Contact">
+            </div>
+        </div>
+
+        <div id="Contact" class="local-nav-section">
             <h2>Contact</h2>
 
             <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeAWByljpr8R6YKmypBt_SoieIxkELqTe6nTuo08duXWOXzZg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                <label>
-                    Name:
+                <div id="contact-form-top">
+                    <label>Name:</label>
                     <input name="entry.2124440639" type="text" id="entry.2124440639" class="nameInput">
-                </label>
-                <label>
-                    Contact:
-                    <input name="entry.29024541" type="text" id="entry.29024541" class="nameInput">
-                </label>
-                <br>
-                <label>
-                    Message:
-                    <textarea name="entry.1882131274" id="entry.1882131274" rows="4" cols="50"></textarea>
-                </label>
-                <input class="button" type="submit" value="Submit">
-                
+                </div>
+                <div id="contact-form-middle">
+                    <label>Contact:</label>
+                    <input name="entry.29024541" type="text" id="entry.29024541" class="contactInput">
+                </div>
+                <div id="contact-form-bottom">
+                    <label>Message:</label>
+                    <textarea name="entry.1882131274" id="entry.1882131274" rows="20" cols="110"></textarea>
+                    <input type="submit" value="Send">
+                </div>
             </form>
               
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             
-            
-        </section>
+        </div>
     </main>
 
     <div id="footer">
-        <address><a href="https://www.linkedin.com/in/reedgunn/" target="_blank">LinkedIn</a> | <a href="https://github.com/reedgunn" target="_blank">GitHub</a></address>
         <p>&copy;2024 Reed Gunn. All rights reserved.</p>
     </div>
 

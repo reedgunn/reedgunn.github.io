@@ -1,60 +1,74 @@
 /* styles.css */
 
-body, html, .button {
+body, html, input, textarea {
     background: rgb(249, 249, 249);
     color: rgb(31, 31, 31);
     font: min(2vh, calc(2vw/1.85)) "Roboto Mono", "Roboto", monospace;
-    margin: 0;
+    margin: 3.5vh 0 0 0;
     padding: 0;
 }
 
-#local-nav {
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    z-index: 1;
+#navbar {
     list-style-type: none;
-    margin: 0vh 0vw 3vh 0vw;
+    margin: 0;
     padding: 0;
-    overflow: auto;
+    width: 100vw;
     background-color: rgb(35, 35, 35);
-    li {
-        float: left;
-    }
-    li a {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    li a:hover {
-        background-color: rgb(110, 110, 110);
-    }
-    li a.active {
-        background-color: rgb(120, 0, 200);
-    }
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: auto;
+}
+
+#navbar li.left-nav-link {
+    float: left;
+    width: auto;
+}
+
+#navbar li a {
+    display: block;
+    border: min(0.5vh, calc(0.5vw/1.85)) solid rgb(35, 35, 35);
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    padding: 1.3vh calc(1.5vw/1.85);
+    margin: auto;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: rgb(249, 249, 249);
+    color: rgb(35, 35, 35);
+
+}
+
+#navbar li.left-nav-link a.active {
+    background-color: rgb(148, 71, 255);
+    border-color: rgb(148, 71, 255);
 }
 
 main {
     clear: left;
 }
 
-.part {
-    float: left;
+#intro {
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: min(63vh, calc(63vw/1.85));
+    margin: 3vh 0;
 }
+
 .left, .right {
-    width: 25vw;
-    padding: 10vh 5vw;
+    width: 25%;
     table {
-        width: 100%;
         border-collapse: collapse;
+        margin: auto;
     }
     th, td {
         border-bottom: 1px solid black;
         text-align: center;
-        padding: 1vh 0vw;
+        padding: min(1vh, calc(1vw/1.85)) 3vw;
     }
     tr:nth-child(even) {
         background-color: rgb(235, 235, 235);
@@ -64,29 +78,18 @@ main {
     }
 }
 .center {
-    width: 50vw;
-    section {
-        height: min(67vh, calc(67vw/1.85));
-        width: 100%;
-        margin: auto;
-        border: min(1vh, calc(1vw/1.85)) solid black;
-        border-radius: min(2vh, calc(2vw/1.85));
-        text-align: center;
-        h1 {
-            margin: 2vh 0;
-        }
+    width: 50%;
+    border: min(1vh, calc(1vw/1.85)) solid black;
+    border-radius: min(2vh, calc(2vw/1.85));
+    text-align: center;
+    h1 {
+        margin: min(2vh, calc(2vw/1.85)) 0;
     }
 }
 #headerHeadshot {
     width: min(20vw, calc(20vh*1.85));
     height: min(20vw, calc(20vh*1.85));
     border-radius: 50%;
-}
-
-
-
-#footer {
-    text-align: center;
 }
 
 h1 {
@@ -99,7 +102,7 @@ h2 {
 }
 h3 {
     font-size: min(3vh, calc(3vw/1.85));
-    margin: 1vh 0vw 1vh 1.5vw;
+    margin: 1vh 0vw 1.25vh 1.5vw;
 }
 
 p, address {
@@ -110,16 +113,6 @@ p, address {
     p {
         margin-bottom: 2vh;
     }
-}
-
-input, textarea {
-    padding: 0vh 1vw;
-    border-style: solid;
-    border-width: min(0.35vh, calc(0.35vw/1.85));
-    margin-bottom: 2vh;
-    margin-left: 1.5vw;
-    border-color: rgb(31, 31, 31);
-    background-color: White;
 }
 
 .app-container {
@@ -140,26 +133,23 @@ input, textarea {
     transform-origin: top left;
 }
 
-#emailInput {
-    width: 20vw;
-    height: 3vh;
-    padding: 0vh 0.5vw;
+#gform {
+    margin: 0 0 min(10vh, calc(10vw/1.85)) 2vw;
+    label, input, textarea {
+        float: left;
+    }
 }
 
-#gform {
-    .nameInput {
-        width: 6vw;
-    }
-    .emailInput {
-        width: 21vw;
-        margin-bottom: 1.5vh;
-    }
-    textarea {
-        display: inline;
-        margin: 0;
-        padding: 0;
-    }
-    margin-left: 1.5vw;
+#contact-form-bottom, #contact-form-middle {
+    clear: left;
+}
+
+.nameInput {
+    width: 13vw;
+}
+
+.contactInput {
+    width: 27vw;
 }
 
 th, td {
@@ -167,6 +157,31 @@ th, td {
 }
 
 .local-nav-section {
-    padding-top: 6.5vh; /* Adjust as needed */
-    margin-top: -6.5vh; /* Negative margin equal to the navbar height */
+    padding-top: 6.5vh;
+    margin-top: -6.5vh;
+}
+
+input, textarea {
+    border: min(0.25vh, calc(0.25vw/1.85)) solid Black;
+    padding: 0 min(0.55vh, calc(0.55vw/1.85));
+    margin: 0 0.75vw 2.5vh;
+}
+
+.app-container + ul {
+    margin-left: 1vw;
+}
+
+a {
+    color: Blue;
+}
+
+::selection {
+    color: rgba(0, 0, 0, 0);
+    background-color: Black;
+}
+
+#footer {
+    text-align: center;
+    clear: left;
+    margin-top: 71vh;
 }
