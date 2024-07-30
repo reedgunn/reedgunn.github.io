@@ -40,7 +40,7 @@ div.left tr:nth-child(even), div.right tr:nth-child(even) {
     background-color: rgb(235, 235, 235);
 }
 
-div.left, div.right th {
+div.left th, div.right th {
     font-size: min(2.5vh, calc(2.5vw/1.85));
 }
 
