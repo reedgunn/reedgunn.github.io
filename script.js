@@ -64,17 +64,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(clearFormFields, 1000);
     });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    var lastClickedLink = document.querySelector('.active');
-    var links = document.querySelectorAll("li.left-nav-link > a");
-    links.forEach(link => {
-        link.addEventListener("click", function() {
-            if (lastClickedLink) {
-                lastClickedLink.classList.remove("active");
-            }
-            link.classList.add("active");
-            lastClickedLink = link;
-        });
-    });
-});

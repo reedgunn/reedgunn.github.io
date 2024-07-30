@@ -10,37 +10,74 @@
 </head>
 
 <body>
-    <ul id="navbar">
-        <li class="left-nav-link"><a id="home-link" class="active" href="index.html">Home</a></li>
-        <li class="left-nav-link"><a href="index.html#Portfolio">Portfolio</a></li>
-        <li class="left-nav-link"><a href="index.html#Contact">Contact</a></li>
-        <li style="float:right"><a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">Resume</a></li>;
-        <li style="float:right"><a href="https://www.linkedin.com/in/reedgunn" target="_blank">LinkedIn</a></li>;
-        <li style="float:right"><a href="https://github.com/reedgunn" target="_blank">GitHub</a></li>;
+    <ul class="navbar">
+        <li class="left">
+            <a href="">Home</a>
+        </li>
+        <li class="left dropdown">
+            <a href="#Portfolio" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="#Worble-Game-App" class="dropdown-link">Worble Game App</a>
+                <a href="#Ping-Game-App" class="dropdown-link">Ping Game App</a>
+                <a href="#Sleep-Schedule-Generator-App" class="dropdown-link">Sleep Schedule Generator App</a>
+            </div>
+        </li>
+        <li class="left">
+            <a href="#Contact">Contact</a>
+        </li>
+        <li class="right">
+            <a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="right">
+            <a href="https://www.linkedin.com/in/reedgunn" target="_blank">LinkedIn</a>
+        </li>
+        <li class="right">
+            <a href="https://github.com/reedgunn" target="_blank">GitHub</a>
+        </li>
     </ul>
 
     <div id="intro">
         <div class="part left">
             <table>
-            <thead>
-                <tr><th>Languages</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Python</td></tr>
-                <tr><td>Java</td></tr>
-                <tr><td>C#</td></tr>
-                <tr><td>C++</td></tr>
-                <tr><td>HTML</td></tr>
-                <tr><td>CSS</td></tr>
-                <tr><td>C</td></tr>
-                <tr><td>MATLAB</td></tr>
-                <tr><td>Racket</td></tr>
-            </tbody>
+                <thead>
+                    <tr>
+                        <th>Languages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C++</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>MATLAB</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                    </tr>
+                    <tr>
+                        <td>Racket</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div class="part center">
             <h1>Reed Gunn</h1>
-            <img id="headerHeadshot" src="images/Headshot.png">
+            <img class="headshot" src="images/Headshot.png">
             <p>Computer Science major at Northwestern University (sophomore) seeking Summer 2025 Software Engineering internship.</p>
         </div>
         <div class="part right">
@@ -60,9 +97,9 @@
         <div id="Portfolio" class="local-nav-section">
             <h2>Portfolio</h2>
             <div id="Worble">
-                <h3>Worble Game App:</h3>
+                <h3 id="Worble-Game-App" class="local-nav-section">Worble Game App:</h3>
                 <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Worble/index.html"></iframe>
+                    <iframe class="app" src="Unity_WebGL_Apps/Worble-Game-App/index.html"></iframe>
                 </div>
                 <ul>
                     <li>Skills: C#, Game Development, Data Structures</li>
@@ -70,9 +107,9 @@
                 </ul>
             </div>
             <div id="Ping">
-                <h3>Ping Game App:</h3>
+                <h3 id="Ping-Game-App" class="local-nav-section">Ping Game App:</h3>
                 <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Ping/index.html"></iframe>
+                    <iframe class="app" src="Unity_WebGL_Apps/Ping-Game-App/index.html"></iframe>
                 </div>
                 <ul>
                     <li>Skills: C#, Game Development, Physics</li>
@@ -80,9 +117,9 @@
                 </ul>
             </div>
             <div id="Sleep Schedule Generator">
-                <h3>Sleep Schedule Generator App:</h3>
+                <h3 id="Sleep-Schedule-Generator-App" class="local-nav-section">Sleep Schedule Generator App:</h3>
                 <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Sleep Schedule Generator/index.html"></iframe>
+                    <iframe class="app" src="Unity_WebGL_Apps/Sleep-Schedule-Generator-App/index.html"></iframe>
                 </div>
                 <ul>
                     <li>Skills: C#, Algorithms, Data Analysis</li>
