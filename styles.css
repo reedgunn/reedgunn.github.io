@@ -1,6 +1,7 @@
 /* styles.css */
 
 body, html, input, textarea {
+    counter-reset: penis;
     background: rgb(249, 249, 249);
     color: rgb(31, 31, 31);
     font: min(2vh, calc(2vw/1.85)) "Roboto Mono", "Roboto", monospace;
@@ -77,7 +78,7 @@ h3 {
 }
 
 p {
-    margin-left: 1.5vw;
+    margin: min(1.9vh, calc(1.9vw/1.85));
 }
 
 #portfolio p {
@@ -112,14 +113,6 @@ p {
 
 #contact-form-middle, #contact-form-bottom {
     clear: left;
-}
-
-.nameInput {
-    width: 13vw;
-}
-
-.contactInput {
-    width: 27vw;
 }
 
 th, td {
@@ -190,6 +183,18 @@ a {
 
 .navbar li a.dropdown-link:hover {
     background-color: rgba(128, 0, 255, 0.5);
+}
+
+.navbar li a.dropdown-link {
+    text-align: center;
+}
+
+.navbar li a.dropdown-link.single-line{
+    line-height: 3.85vh;
+}
+
+.navbar li a.dropdown-link.double-line{
+    line-height: 1.925vh;
 }
 
 .navbar li.dropdown {

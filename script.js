@@ -33,12 +33,12 @@ function resizeIframes() {
     });
 }
 
-window.addEventListener('resize', () => {
+addEventListener('resize', () => {
     setTimeout(resizeIframes, 100); // Short delay to ensure correct dimensions after resize
 });
 
-window.addEventListener('load', () => {
-    for (var i = 0; i < 10; i++) {
+addEventListener('load', () => {
+    for (let i = 0; i < 10; i++) {
         resizeIframes();
     }
 });
@@ -64,3 +64,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(clearFormFields, 1000);
     });
 });
+
+const person = {
+    firstName: "Reed",
+    lastName: "Gunn",
+    age: 19,
+    grade: "sophomore"
+};
+
+
+
+function Person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+}
+
+Person.prototype.fullName = function() {
+    return this.firstName + " " + this.lastName;
+}
+
+Person.prototype.changeLastName = function(newLastName) {
+    this.lastName = newLastName;
+}
