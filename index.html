@@ -1,164 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reed Gunn's Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+    <title>My Websites</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/Headshot.png">
 </head>
-
 <body>
-    <ul class="navbar">
-        <li class="left">
-            <a href="">Home</a>
-        </li>
-        <li class="left dropdown">
-            <a href="#Portfolio" class="dropbtn">Portfolio</a>
-            <div class="dropdown-content">
-                <a href="#Worble-Game-App" class="dropdown-link single-line">Worble Game App</a>
-                <a href="#Ping-Game-App" class="dropdown-link single-line">Ping Game App</a>
-                <a href="#Sleep-Schedule-Generator-App" class="dropdown-link double-line">Sleep Schedule Generator App</a>
-            </div>
-        </li>
-        <li class="left">
-            <a href="#Contact">Contact</a>
-        </li>
-        <li class="right">
-            <a href="https://reedgunn.github.io/images/REED_GUNN_RESUME.pdf" target="_blank">Resume</a>
-        </li>
-        <li class="right">
-            <a href="https://www.linkedin.com/in/reedgunn" target="_blank">LinkedIn</a>
-        </li>
-        <li class="right">
-            <a href="https://github.com/reedgunn" target="_blank">GitHub</a>
-        </li>
-    </ul>
-
-    <div id="intro">
-        <div class="part left">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Languages</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>C++</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                    </tr>
-                    <tr>
-                        <td>MATLAB</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                    </tr>
-                    <tr>
-                        <td>C#</td>
-                    </tr>
-                    <tr>
-                        <td>Racket</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="part center">
-            <h1 id="Name">Reed Gunn</h1>
-            <img class="headshot" src="images/Headshot.png">
-            <p>Pursuing a Bachelor of Science degree in Computer Science at Northwestern University’s 
-                McCormick School of Engineering, expected to graduate in 2027. Actively seeking a software 
-                engineering internship for Summer 2025.</p>
-        </div>
-        <div class="part right">
-            <table>
-                <thead>
-                    <tr><th>Technologies</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Git</td></tr>
-                    <tr><td>GitHub</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <main>
-        <div id="Portfolio" class="local-nav-section">
-            <h2>Portfolio</h2>
-            <div id="Worble">
-                <h3 id="Worble-Game-App" class="local-nav-section">Worble Game App:</h3>
-                <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Worble Game App/index.html"></iframe>
-                </div>
-                <ul>
-                    <li>Skills: C#, Game Development, Data Structures</li>
-                    <li>GitHub: <a href="https://github.com/reedgunn/Worble-Game-App" target="_blank">github.com/reedgunn/Worble-Game-App</a></li>
-                </ul>
-            </div>
-            <div id="Ping">
-                <h3 id="Ping-Game-App" class="local-nav-section">Ping Game App:</h3>
-                <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Ping Game App/index.html"></iframe>
-                </div>
-                <ul>
-                    <li>Skills: C#, Game Development, Physics</li>
-                    <li>GitHub: <a href="https://github.com/reedgunn/Ping-Game-App" target="_blank">github.com/reedgunn/Ping-Game-App</a></li>
-                </ul>
-            </div>
-            <div id="Sleep Schedule Generator">
-                <h3 id="Sleep-Schedule-Generator-App" class="local-nav-section">Sleep Schedule Generator App:</h3>
-                <div class="app-container">
-                    <iframe class="app" src="Unity_WebGL_Apps/Sleep Schedule Generator App/index.html"></iframe>
-                </div>
-                <ul>
-                    <li>Skills: C#, Algorithms, Data Analysis</li>
-                    <li>GitHub: <a href="https://github.com/reedgunn/Sleep-Schedule-Generator-App" target="_blank">github.com/reedgunn/Sleep-Schedule-Generator-App</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="Contact" class="local-nav-section">
-            <h2>Contact</h2>
-
-            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeAWByljpr8R6YKmypBt_SoieIxkELqTe6nTuo08duXWOXzZg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                <div id="contact-form-top">
-                    <label>Name:</label>
-                    <input name="entry.2124440639" type="text" id="entry.2124440639" class="nameInput">
-                </div>
-                <div id="contact-form-middle">
-                    <label>Contact:</label>
-                    <input name="entry.29024541" type="text" id="entry.29024541" class="contactInput">
-                </div>
-                <div id="contact-form-bottom">
-                    <label>Message:</label>
-                    <textarea name="entry.1882131274" id="entry.1882131274" rows="20" cols="110"></textarea>
-                    <input type="submit" value="Send">
-                </div>
-            </form>
-              
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-            
-        </div>
-    </main>
-
-    <div id="footer">
-        <p>&copy; 2024 Reed Gunn. All rights reserved.</p>
-    </div>
-
-    <script src="script.js"></script>
-
+    <nav>
+        <ul>
+            <li><a href="https://reedgunn.github.io/personal-website" target="_blank">Personal Website</a></li>
+            <li><a href="https://reedgunn.github.io/colors-gallery-website" target="_blank">Colors Gallery Website</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

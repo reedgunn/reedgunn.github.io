@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.color-square {
+    width: min(17vw, calc(17vh*1.85));
+    height: min(17vw, calc(17vh*1.85));
+    box-sizing: border-box;
+    float: left;
+    margin: min(1.5vw, calc(1.5vh*1.85));
+    line-height: min(17vw, calc(17vh*1.85));
+    text-align: center;
+}

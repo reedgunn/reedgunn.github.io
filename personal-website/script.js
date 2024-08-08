@@ -34,7 +34,7 @@ function resizeIframes() {
 }
 
 addEventListener('resize', () => {
-    setTimeout(resizeIframes, 100); // Short delay to ensure correct dimensions after resize
+    setTimeout(resizeIframes, 100);
 });
 
 addEventListener('load', () => {
@@ -65,26 +65,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-const person = {
-    firstName: "Reed",
-    lastName: "Gunn",
-    age: 19,
-    grade: "sophomore"
-};
+addEventListener("scroll", function() {
+    alert("User scrolled.");
 
-
-
-function Person(firstName, lastName, age, eyeColor) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.eyeColor = eyeColor;
-}
-
-Person.prototype.fullName = function() {
-    return this.firstName + " " + this.lastName;
-}
-
-Person.prototype.changeLastName = function(newLastName) {
-    this.lastName = newLastName;
-}
+    const scrollPositionY = window.scrollY;
+    const scrollPositionX = window.scrollX;
+    
+    console.log(`Vertical scroll position: ${scrollPositionY}`);
+    console.log(`Horizontal scroll position: ${scrollPositionX}`);
+})
