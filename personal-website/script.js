@@ -64,13 +64,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(clearFormFields, 1000);
     });
 });
-
-addEventListener("scroll", function() {
-    alert("User scrolled.");
-
-    const scrollPositionY = window.scrollY;
-    const scrollPositionX = window.scrollX;
-    
-    console.log(`Vertical scroll position: ${scrollPositionY}`);
-    console.log(`Horizontal scroll position: ${scrollPositionX}`);
-})

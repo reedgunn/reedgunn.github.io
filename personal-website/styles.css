@@ -1,223 +1,63 @@
-/* styles.css */
-
+/* Global Styles */
 body, html, input, textarea {
-    counter-reset: penis;
-    background: rgb(249, 249, 249);
-    color: rgb(31, 31, 31);
-    font: min(2vh, calc(2vw/1.85)) "Roboto Mono", "Roboto", monospace;
+    background: #F9F9F9;
+    color: #1F1F1F;
+    font-family: "Roboto Mono", monospace;
     margin: 0;
     padding: 0;
 }
 
-/* main {
-    clear: both;
-} */
-
-#intro {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: min(63vh, calc(63vw/1.85));
-}
-
-div.left, div.right {
-    width: 25%;
-}
-
-div.left table, div.right table {
-    border-collapse: collapse;
-    margin: auto;
-}
-
-div.left th, div.left td, div.right th, div.right td  {
-    border-bottom: 1px solid black;
-    text-align: center;
-    padding: min(1vh, calc(1vw/1.85)) 3vw;
-}
-
-div.left tr:nth-child(even), div.right tr:nth-child(even) {
-    background-color: rgb(235, 235, 235);
-}
-
-div.left th, div.right th {
-    font-size: min(2.5vh, calc(2.5vw/1.85));
-}
-
-.center {
-    width: 50%;
-    border: min(1vh, calc(1vw/1.85)) solid black;
-    border-radius: min(2vh, calc(2vw/1.85));
-    text-align: center;
-}
-
-.center h1 {
-    margin: min(2vh, calc(2vw/1.85)) 0;
-}
-
-.headshot {
-    width: min(20vw, calc(20vh*1.85));
-    height: min(20vw, calc(20vh*1.85));
-    border-radius: 50%;
-}
-
-h1 {
-    font-size: min(5vh, calc(5vw/1.85));
-}
-
-h2 {
-    text-decoration: underline;
-    font-size: min(4vh, calc(4vw/1.85));
-    margin: 0vh 0vw 2vh 1vw;
-}
-
-h3 {
-    font-size: min(3vh, calc(3vw/1.85));
-    margin: 1vh 0vw 1.25vh 1.5vw;
-}
-
-p {
-    margin: min(1.9vh, calc(1.9vw/1.85));
-}
-
-#portfolio p {
-    margin-bottom: 2vh;
-}
-
-.app-container {
-    width: min(80vw, calc(80vh*1.6));
-    height: min(80vh, calc(80vw/1.6));
-    position: relative;
-    overflow: hidden;
-    margin: 0vh 0vw 0vh 1.5vw;
-}
-
-.app {
-    width: 100%;
-    height: 100%;
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
-}
-
-#gform {
-    margin: 0 0 min(10vh, calc(10vw/1.85)) 2vw;
-}
-
-#gform label, input, textarea {
-    float: left;
-}
-
-#contact-form-middle, #contact-form-bottom {
-    clear: left;
-}
-
-th, td {
-    border-bottom: 0.25vh solid rgb(31, 31, 31);
-}
-
-.local-nav-section {
-    padding-top: 6.5vh;
-    margin-top: -6.5vh;
-}
-
-input, textarea {
-    border: min(0.25vh, calc(0.25vw/1.85)) solid Black;
-    padding: 0 min(0.55vh, calc(0.55vw/1.85));
-    margin: 0 0.75vw 2.5vh;
-}
-
-.app-container + ul {
-    margin-left: 1vw;
-}
-
-a {
-    color: Blue;
-}
-
-#footer {
-    text-align: center;
-    clear: left;
-    margin-top: min(71vh, calc(71vw/1.85));
-}
-
-
-
-
-
-
-
+/* Navbar */
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
+    padding: 0;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
-.navbar li.left {
-    float: left;
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
 }
 
-.navbar li.right {
-    float: right;
+.navbar li {
+    flex-grow: 1;
 }
 
-.navbar a, .dropbtn {
-    display: inline-block;
+.navbar a {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(128, 0, 255);
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #8000FF;
 }
 
-.navbar li a.dropdown-link:hover {
-    background-color: rgba(128, 0, 255, 0.5);
-}
-
-.navbar li a.dropdown-link {
-    text-align: center;
-}
-
-.navbar li a.dropdown-link.single-line{
-    line-height: 3.85vh;
-}
-
-.navbar li a.dropdown-link.double-line{
-    line-height: 1.925vh;
-}
-
-.navbar li.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
+/* Dropdown */
 .dropdown-content {
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: #f9f9f9;
-    max-width: 8.05vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    min-width: 160px;
 }
 
 .dropdown-content a {
     color: black;
-    padding: min(0.65vh, calc(0.65vw/1.85));
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    font-size: min(1.5vh, calc(1.5vw/1.85));
 }
 
 .dropdown-content a:hover {
@@ -226,4 +66,97 @@ a {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Intro Section */
+.intro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    height: 60vh;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages, .technologies {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.languages ul, .technologies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.center {
+    flex: 2;
+    text-align: center;
+}
+
+.headshot {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 2rem;
+}
+
+.app-container {
+    width: 100%;
+    height: 480px;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8000FF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
 }
